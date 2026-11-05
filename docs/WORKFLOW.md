@@ -46,3 +46,4 @@ Never commit or ship vehicles/vivace/generated/.
 - 2026-11-05 (local): user spawned and drove the 7 new configs: all work (no errors reported). Performance, gearing feel and ECU power still unmeasured.
 - 2026-11-05 (local): Mk7.5 R DSG switched to DQ381_R gearing (UNTESTED). Added inferred DQ250_GTI gearbox + 2 Mk7 GTI/PP DSG configs (ratios UNVERIFIED, caveated in names/docs). Added lua/vehicle/extensions/ea888PerfLogger.lua + docs/PERFORMANCE.md (UNTESTED). Now 12 configs.
 - 2026-11-05 (local): perf logger works (PP DSG 0-100 = 6.20 s). 100-0 reading invalid (logger bug, fixed: timing now starts when passing down through 100 km/h).
+- 2026-11-05 (local): PP DSG measured 0-100 6.23 s, 100-0 37.5 m. Brake estimate OK, no change.

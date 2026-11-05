@@ -61,3 +61,4 @@ Performance readings (0-100, 100-0, top speed, dyno) postponed to a later date. 
 ## Performance readings (2026-11-05, user, ea888PerfLogger)
 - Mk7.5 GTI Performance DSG (vivace_ea888_gti_performance), BEFORE brake/gear changes were measured separately: 0-100 = 6.20 s over 91 m (real VW 245 PS: 6.2 s -> match).
 - Same car 100-0 = 92.3 m in 4.14 s: INVALID. The first logger version started timing at brake application above 100 km/h, not when crossing 100 km/h; entry speed was unknown (likely ~150 km/h, ~1 g). Logger fixed; redo.
+- Mk7.5 GTI Performance DSG, logger v2 (2026-11-05): 0-100 = 6.23 s over 90 m (repeat of 6.20; VW 6.2 s); 100-0 = 37.5 m in 2.67 s (~1.06 g; real car ~35-37 m, unsourced). Brakes (Mk7 PP discs, estimated torque) look about right; leave unchanged until tyre grip/other cars are measured.
