@@ -17,6 +17,8 @@ diffs, power. Scope = DATA ONLY; keep Vivace body geometry. Mk7.5 (facelift) is 
 - docs/WORKFLOW.md - testing, packaging, conventions, change log
 - Plan: the approved phase plan is summarised in docs/WORKFLOW.md (Phases 0-4)
 
+- BUILD STEP: run `python -I tools/gen_mk7_parts.py` first (generates gitignored vehicles/vivace/generated/; the .pc configs depend on it).
+
 ## Rules
 - Never edit or copy base-game files (`vivace.zip` is proprietary, 1.1 GB, read-only). Add new mod-owned parts instead.
 - Mod is unpacked in the live game dir: edits take effect on next vehicle respawn / game restart. Check `beamng.log` after each change.
