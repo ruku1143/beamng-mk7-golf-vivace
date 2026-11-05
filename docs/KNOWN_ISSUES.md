@@ -11,3 +11,4 @@
 9. MQ350 manual exists but no config uses it; GTI real cars have 6MT option.
 10. R is currently Mk7.5 310 PS/400 Nm; project target is Mk7 300 PS/380 Nm.
 11. Total vehicle mass, fuel (50 L) and all suspension/brake values are base Vivace, not Golf.
+- Mk7 GTI/PP DSG gear ratios are INFERRED from a Passat 02E example (see GEARING_CALC.md); replace when a real GTI DQ250 table is found.

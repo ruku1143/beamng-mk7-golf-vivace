@@ -153,7 +153,7 @@
     "vivace_taillight_wide_R_running_bulb": "ledPositionLightbar_2W",
     "vivace_towhitch": "",
     "vivace_transfer_case": "vivace_transfer_case_AWD",
-    "vivace_transmission": "vivace_transmission_ea888_DQ381",
+    "vivace_transmission": "vivace_transmission_ea888_DQ381_R",
     "vivace_trim": "",
     "vivace_trunk_load": "",
     "vivace_undertray": "vivace_undertray",
