@@ -1,0 +1,42 @@
+# Handover: local session -> cloud session
+
+Written 2026-11-05. Read `CLAUDE.md`, then `docs/PLAN.md` (approved plan), then this file.
+
+## State
+- Phase 0 (docs, git) DONE and pushed. No mod behaviour has changed. All mod files are unmodified from the original.
+- Phase 1 (verify Mk7 specs) is NOT started: `docs/MK7_SPEC_TARGETS.md` holds unverified memory values.
+- Decisions made with the user: scope = data only (keep Vivace body); variants = GTI 230 PS, GTI Performance 245 PS, R 300 PS (Mk7, not 7.5).
+
+## What the cloud session CAN do (no game, no base-game files there)
+1. Phase 1: web-research and fill `docs/MK7_SPEC_TARGETS.md` for every row, with a source URL and confidence per number.
+   Add the missing rows: gear ratios + final drives per gearbox (MQ350-6, DQ250, DQ381) and variant, spring rates, damper tuning,
+   ARB diameters, ride height, camber/toe, steering ratio, Haldex rear bias, VAQ LSD behaviour, kerb weights and axle loads per variant
+   (state DIN vs EU, with/without driver), tyre/wheel options per trim, brake disc sizes.
+2. Pre-compute numbers for later (pure maths, no game): overall -> normalised gear ratios for the mod's `/4.187` convention,
+   mass-delta budget per variant, brake torque scaling from disc size, fuel-tank litres.
+3. Draft (do not rely on) new part jbeam text under `vehicles/vivace/mk7_*.jbeam` ONLY if clearly marked UNTESTED in the file header and commit message.
+4. Keep docs updated; add entries to the change log in `docs/WORKFLOW.md`.
+
+## What the cloud session CANNOT do
+- Run BeamNG, read `vivace.zip` (1.1 GB proprietary, only on the user's PC at `D:\SteamLibrary\steamapps\common\BeamNG.drive\content\vehicles\vivace.zip`), or measure baselines.
+- So anything needing base Vivace values (stock mass, axle split, existing spring rates, brake torque constants, `$brakestrength` meaning, slot override behaviour) is a TODO for the local session. List such needs in the "Local session TODO" section below.
+- Never upload or commit base-game files.
+
+## Rules (same as local)
+- Never edit base-game files; new mod-owned parts only. Do not change existing ECU/turbo/gear values until baseline exists.
+- Mark any unverified number as such. Do not invent specs; if no source, write "no source found".
+- Small commits, clear messages; push to `main` of ruku1143/beamng-mk7-golf-vivace (pull first - local may have pushed).
+
+## Suggested first tasks, in order
+1. Fill the Phase 1 table (biggest value, needs only the web).
+2. Add the extra rows listed above.
+3. Write `docs/GEARING_CALC.md` with the ratio maths.
+4. Update "Local session TODO" with exactly what to measure/read when the user returns.
+
+## Local session TODO (cloud session appends here)
+- [ ] Phase 2 baseline per config: mass, axle split, CoG, 0-100, 100-0, top speed
+- [ ] Read stock Vivace mass, fuel tank, brake and suspension constants from vivace.zip (see docs/BASE_GAME_REFERENCE.md)
+- [ ] Check slot-override behaviour for mass/fuel/brake parts
+- [ ] Test any UNTESTED jbeam drafts in game and check beamng.log
+
+## Cloud session log (append dated entries)
