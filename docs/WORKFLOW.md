@@ -48,3 +48,4 @@ Never commit or ship vehicles/vivace/generated/.
 - 2026-11-05 (local): perf logger works (PP DSG 0-100 = 6.20 s). 100-0 reading invalid (logger bug, fixed: timing now starts when passing down through 100 km/h).
 - 2026-11-05 (local): PP DSG measured 0-100 6.23 s, 100-0 37.5 m. Brake estimate OK, no change.
 - 2026-11-05 (local): R DSG 310 PS measured 0-100 4.59 s, 100-0 34.4 m (match real). Note mass/power interplay in BASELINE.md.
+- 2026-11-05 (local): GTI 230 PS DSG measured 6.34 s / 35.1 m. Performance baseline for the 3 originals complete; all match real 0-100 within ~0.1 s.

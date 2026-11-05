@@ -64,3 +64,12 @@ Performance readings (0-100, 100-0, top speed, dyno) postponed to a later date. 
 - Mk7.5 GTI Performance DSG, logger v2 (2026-11-05): 0-100 = 6.23 s over 90 m (repeat of 6.20; VW 6.2 s); 100-0 = 37.5 m in 2.67 s (~1.06 g; real car ~35-37 m, unsourced). Brakes (Mk7 PP discs, estimated torque) look about right; leave unchanged until tyre grip/other cars are measured.
 - Mk7.5 Golf R 310 PS DSG (vivace_ea888_golf_r, new DQ381_R gearing), logger v2: 0-100 = 4.59 s over 73 m (VW 310 PS DSG ~4.6 s: match); 100-0 = 34.4 m in 2.47 s (~1.15 g; real ~33-35 m, unsourced).
   CAVEAT: car is ~190-245 kg over real mass yet matches real 0-100, so engine output and/or traction is likely generous. If mass is ever cut, times will drop and the engine must be retuned DOWN. Do a dyno check before retuning.
+- Mk7.5 GTI 230 PS DSG (vivace_ea888_gti), logger v2: 0-100 = 6.34 s over 94 m (real 230 PS DSG ~6.4 s: match); 100-0 = 35.1 m in 2.53 s (~1.1 g; real ~35-37 m, unsourced).
+
+### Performance baseline summary (COMPLETE for the 3 original Mk7.5 DSG configs, 2026-11-05)
+| Config | 0-100 s | 100-0 m | Real 0-100 |
+|---|---|---|---|
+| GTI 230 PS DSG | 6.34 | 35.1 | ~6.4 |
+| GTI Performance 245 PS DSG | 6.23 | 37.5 | ~6.2 |
+| Golf R 310 PS DSG | 4.59 | 34.4 | ~4.6 |
+Not yet measured: top speed/max rpm, dyno power curves, and the 9 other configs (manuals, Mk7, R/DQ250 variants).
