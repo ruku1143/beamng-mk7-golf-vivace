@@ -45,3 +45,4 @@ Never commit or ship vehicles/vivace/generated/.
 - 2026-11-05 (local): added Mk7 ECUs (ea888_engine_mk7.jbeam), R/DQ250 gearboxes (ea888_transmissions_mk7.jbeam via tools/gen_mk7_gearboxes.py) and 7 generated configs (tools/gen_mk7_configs.py); see docs/CONFIGS.md. ALL UNTESTED IN GAME. Mk7 GTI/PP DSG not built (no DQ250 GTI ratios).
 - 2026-11-05 (local): user spawned and drove the 7 new configs: all work (no errors reported). Performance, gearing feel and ECU power still unmeasured.
 - 2026-11-05 (local): Mk7.5 R DSG switched to DQ381_R gearing (UNTESTED). Added inferred DQ250_GTI gearbox + 2 Mk7 GTI/PP DSG configs (ratios UNVERIFIED, caveated in names/docs). Added lua/vehicle/extensions/ea888PerfLogger.lua + docs/PERFORMANCE.md (UNTESTED). Now 12 configs.
+- 2026-11-05 (local): perf logger works (PP DSG 0-100 = 6.20 s). 100-0 reading invalid (logger bug, fixed: timing now starts when passing down through 100 km/h).

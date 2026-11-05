@@ -3,7 +3,7 @@
 --   be:getPlayerVehicle(0):queueLuaCommand("extensions.load('ea888PerfLogger')")
 -- Then drive. It logs automatically to the screen message area and to beamng.log (search "EA888PERF"):
 --   0-100 km/h : from a standstill with throttle >= 0.8, timed from first movement to 100 km/h (time + distance)
---   100-0 km/h : brake >= 0.9 while above 100 km/h, measured to a stop (distance + time)
+--   100-0 km/h : brake >= 0.9 while above 100 km/h; timing starts when speed passes DOWN through 100 km/h, measured to a stop
 --   top speed  : highest speed seen this session, printed on request
 -- Report on demand:  be:getPlayerVehicle(0):queueLuaCommand("ea888PerfLogger.report()")
 -- Unload/reset:      be:getPlayerVehicle(0):queueLuaCommand("ea888PerfLogger.reset()")
@@ -37,8 +37,12 @@ local function updateGFX(dt)
     if v < STOP and thr >= 0.8 then
       state = 'armed'
     elseif v >= TARGET and brk >= 0.9 then
-      state = 'brake'; t = 0; dist = 0
+      state = 'brakeArm'
     end
+  elseif state == 'brakeArm' then
+    -- wait until the car falls through 100 km/h, then start timing (entry speed above 100 is ignored)
+    if brk < 0.3 then state = 'idle'
+    elseif v <= TARGET then state = 'brake'; t = 0; dist = 0 end
   elseif state == 'armed' then
     if thr < 0.5 then state = 'idle'
     elseif v > STOP then state = 'accel'; t = 0; dist = 0 end
