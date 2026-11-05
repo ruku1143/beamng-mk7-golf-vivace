@@ -16,6 +16,8 @@ The mod will cover both Mk7 (2013-16) and Mk7.5 (2016-20). Working variant matri
 | Mk7.5 GTI Performance | 2016-20 | 245 PS / 370 Nm (sourced, VW) | 6MT, 7DSG | VAQ, big brakes |
 | Mk7.5 R | 2016-20 | **310 PS / 380 Nm (user decision 2026-11-05; 2016-18 calibration per Wikipedia, power/torque still unverified)** | 6MT, 7DSG | |
 
+Body: 5-door only (3-door excluded by user decision 2026-11-05). Use 5-door kerb weights; ignore 3-door figures (the Phase 1 R figures of 1395-1420 kg were 3-door).
+
 Rule of thumb for later phases: Mk7 = DQ250 (6DSG), Mk7.5 = DQ381 (7DSG). The mod's current DQ381 + 310 PS-calibrated R is Mk7.5.
 Decided 2026-11-05: manual (MQ350) variants are shipped too, so up to 12 configs (6 DSG + 6 MT). Mk7.5 R = 310 PS (the mod's existing calibration, so little retune needed).
 
