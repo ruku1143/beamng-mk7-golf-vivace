@@ -48,3 +48,12 @@ Performance readings (0-100, 100-0, top speed, dyno) postponed to a later date. 
 - DIN/EU targets assume ~90% fuel (45 L ~ 34 kg), so compare "full tank minus ~4 kg". Gaps unchanged (~190-245 kg R).
 - R static front share 55.6% (dry, empty). Real Mk7 R split unsourced (plan's 58/42 is memory). GTI/PP split still to measure with the corrected command.
 - GTI (DSG, non-PP), v.data.nodes method: MASS 1480.9 kg dry (derived estimate was ~1481: confirmed), FRONT 59.2%, wheelbase 2.680 m.
+- GTI Performance (DSG), v.data.nodes method: MASS 1483.9 kg dry (derived estimate ~1484: confirmed), FRONT 59.3%, wheelbase 2.680 m.
+
+### Baseline summary (mass phase COMPLETE; performance readings still deferred)
+| Config (DSG) | Dry kg | Front % | Dry + 50 L fuel | Real DIN target | Over by |
+|---|---|---|---|---|---|
+| GTI | 1480.9 | 59.2 | ~1518 | ~1295 | ~224 |
+| GTI Performance | 1483.9 | 59.3 | ~1521 | ~1327 | ~195 |
+| Golf R | 1583.4 | 55.6 | 1620.9 | ~1375 (Mk7) / ~1430 (Mk7.5) | ~245 / ~190 |
+(DIN assumes ~90% fuel, so subtract ~4 kg from the "over by" if comparing precisely.)
