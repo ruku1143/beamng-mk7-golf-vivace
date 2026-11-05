@@ -39,3 +39,4 @@ Preferred basis going forward: empty car vs DIN. (EU kerb includes 75 kg driver;
 
 ## Deferred (user decision 2026-11-05)
 Performance readings (0-100, 100-0, top speed, dyno) postponed to a later date. Mass baseline done; split diagnostic still pending.
+- Diagnostic result: v.data.nodes[].pos is the vehicle frame (front y=-1.342, rear y=+1.338, wheelbase 2.680); obj:getNodePosition is world-oriented and WRONG for the split. Use v.data.nodes.

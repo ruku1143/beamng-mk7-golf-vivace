@@ -4,3 +4,7 @@
 _base_extract/
 base_game/
 Thumbs.db
+
+# Generated from the user's own BeamNG install - contains base-game data, never commit or ship
+vehicles/vivace/generated/
+*.generated.jbeam
