@@ -25,3 +25,4 @@ Zip the mod root so `vehicles/` and `art/` are at the zip root (plus info.json).
 - 2026-11-05: Phase 1 spec research filled in docs/MK7_SPEC_TARGETS.md; added docs/GEARING_CALC.md. Docs only, no mod behaviour changed.
 - 2026-11-05 (local): added docs/BASE_VALUES.md (stock Vivace fuel/brake/spring values). No mod behaviour changed.
 - 2026-11-05: Wide Phase 1 research merged (variants, weights, brakes, gearing, engine). Docs only.
+- 2026-11-05 (local): added docs/BASELINE.md procedure + docs/baseline_dump.lua (UNTESTED). Baseline NOT measured: needs the user to run the game and paste results.
