@@ -47,3 +47,4 @@ Never commit or ship vehicles/vivace/generated/.
 - 2026-11-05 (local): Mk7.5 R DSG switched to DQ381_R gearing (UNTESTED). Added inferred DQ250_GTI gearbox + 2 Mk7 GTI/PP DSG configs (ratios UNVERIFIED, caveated in names/docs). Added lua/vehicle/extensions/ea888PerfLogger.lua + docs/PERFORMANCE.md (UNTESTED). Now 12 configs.
 - 2026-11-05 (local): perf logger works (PP DSG 0-100 = 6.20 s). 100-0 reading invalid (logger bug, fixed: timing now starts when passing down through 100 km/h).
 - 2026-11-05 (local): PP DSG measured 0-100 6.23 s, 100-0 37.5 m. Brake estimate OK, no change.
+- 2026-11-05 (local): R DSG 310 PS measured 0-100 4.59 s, 100-0 34.4 m (match real). Note mass/power interplay in BASELINE.md.
