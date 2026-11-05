@@ -33,3 +33,10 @@ Zip the mod root so `vehicles/` and `art/` are at the zip root (plus info.json).
 
 ## Generated base-game derivatives (policy, 2026-11-05)
 - Files generated from the user's own vivace.zip (e.g. a lightened body) go in vehicles/vivace/generated/ and are gitignored. NEVER commit them, and exclude them from any zip you share. The generator script lives in tools/ (no base data inside). Use NEW part names, not base names, so the stock Vivace is unaffected.
+- 2026-11-05 (local): MASS PARKED (runtime scaling broke the car, see MASS_FINDINGS.md). Added tools/gen_mk7_parts.py (generates vehicles/vivace/generated/mk7_parts.generated.jbeam from the local vivace.zip; gitignored). New parts: vivace_brake_F/R_mk7_gti (314x30 / 300x12), vivace_brake_F/R_mk7_pp (340x30 / 310x22), vivace_fueltank_mk7_55. GTI .pc -> mk7_gti brakes; PP and R .pc -> mk7_pp brakes; R .pc -> 55 L tank. Brake torque/mass are FIRST ESTIMATES (torque ~9000*d front, ~4500*d rear), UNTESTED in game.
+
+## BUILD STEP (required): generated parts
+The .pc configs reference parts that exist only in the generated file. After a fresh clone, or a game update, run:
+    python -I tools/gen_mk7_parts.py
+(needs the local BeamNG install; default zip path is D:\SteamLibrary\...\vivace.zip, or pass the path as argument). Without it the configs fail to load those parts.
+Never commit or ship vehicles/vivace/generated/.
