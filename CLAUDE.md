@@ -4,8 +4,8 @@ BeamNG.drive mod: EA888 Gen3 2.0 TSI + DQ381/MQ350 swap for the base-game Vivace
 Three configs: `vivace_ea888_gti`, `vivace_ea888_gti_performance`, `vivace_ea888_golf_r`.
 
 **Current project goal:** turn it into a Mk7 Golf-accurate mod (GTI 230 PS, GTI Performance 245 PS,
-R 300 PS 4Motion): mass, weight distribution, fuel tank, brakes, springs/dampers/ARBs, tyres, gearing,
-diffs, power. Scope = DATA ONLY; keep Vivace body geometry. Mk7.5 is out of scope.
+R 4Motion, pre- and post-facelift): mass, weight distribution, fuel tank, brakes, springs/dampers/ARBs, tyres, gearing,
+diffs, power. Scope = DATA ONLY; keep Vivace body geometry. Mk7.5 (facelift) is IN scope too (decided 2026-11-05): six variants, see docs/MK7_SPEC_TARGETS.md.
 
 ## Read these first (do NOT re-run mod discovery)
 - docs/MOD_MAP.md - every file, part, slotType, config and key number in this mod

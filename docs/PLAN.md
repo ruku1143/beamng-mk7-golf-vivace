@@ -12,6 +12,8 @@ Decided with user: scope = data only (keep Vivace body geometry); variants = GTI
 (245 PS), R (300 PS Mk7, 4Motion). Mk7.5 not in scope (existing R is 310 PS Mk7.5 -> retune to 300 PS/380 Nm;
 keep the 310 calibration as an optional extra part if user wants).
 
+> **UPDATE 2026-11-05:** user decided to cover BOTH pre-facelift (Mk7) and facelift (Mk7.5) variants. Mk7.5 is now IN scope; see the variant matrix in docs/MK7_SPEC_TARGETS.md. Wherever this plan says "Mk7.5 out of scope" or lists three variants, read it as up to six (Mk7 and Mk7.5 each: GTI, GTI Performance, R).
+
 ## Phase 0 - Foundation (first, so the next session needs no rediscovery)
 1. `git init` in the mod folder + `.gitignore` (no base-game extracts, no `*.zip`, no backups). Private GitHub repo.
 2. Write docs in-repo (the user's explicit request):

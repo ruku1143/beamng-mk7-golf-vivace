@@ -4,12 +4,20 @@ Phase 1 research, filled 2026-11-05 by the cloud session (web only; no VW spec P
 Confidence: **High** = VW newsroom/primary. **Med** = aggregator or several agreeing sources. **Low** = single/unclear source.
 "no source found" means exactly that - do NOT fill it from memory. Anything Low or missing must be confirmed before it drives a mod value.
 
-## Decisions needed from the user
-1. **245 PS GTI Performance is probably Mk7.5.** Wikipedia and the VW newsroom (dated 13.04.18) place the 245 PS car in the facelift
-   (2016-20). The pre-facelift Mk7 Performance pack was **230 PS / 350 Nm** (auto-data.net). The plan says Mk7.5 is out of scope.
-   Options: (a) keep 245 PS anyway, (b) make the Performance a 230 PS pack with VAQ + big brakes, (c) drop it.
-2. **Golf R**: launch Mk7 (2014-16) = 300 PS / 380 Nm, 6MT or 6DSG (DQ250). The 7DSG (DQ381) only arrived with the 2017 facelift,
-   so a DQ381 R is also Mk7.5-era. The mod currently uses DQ381 on all configs.
+## Scope: pre- AND post-facelift (decided 2026-11-05)
+The mod will cover both Mk7 (2013-16) and Mk7.5 (2016-20). Working variant matrix (power figures marked * are from memory, UNVERIFIED - confirm in the next research pass):
+
+| Variant | Years | Power / torque | Box options | Notes |
+|---|---|---|---|---|
+| Mk7 GTI | 2013-16 | *220 PS / 350 Nm | 6MT, 6DSG (DQ250) | base brakes 314x30 / 300x12 |
+| Mk7 GTI Performance | 2013-16 | 230 PS / 350 Nm (sourced, auto-data) | 6MT, 6DSG | VAQ, 340x30 / 310x22 brakes |
+| Mk7 R | 2014-16 | 300 PS / 380 Nm (sourced) | 6MT, 6DSG | Haldex Gen5 |
+| Mk7.5 GTI | 2016-20 | 230 PS / 350 Nm (sourced, Wikipedia) | 6MT, 7DSG (DQ381) | |
+| Mk7.5 GTI Performance | 2016-20 | 245 PS / 370 Nm (sourced, VW) | 6MT, 7DSG | VAQ, big brakes |
+| Mk7.5 R | 2016-20 | *310 PS / 380 Nm (2016-18), 300 PS / 400 Nm (2018-20) per Wikipedia - clarify | 6MT, 7DSG | |
+
+Rule of thumb for later phases: Mk7 = DQ250 (6DSG), Mk7.5 = DQ381 (7DSG). The mod's current DQ381 + 310 PS-calibrated R is Mk7.5.
+Open: how many configs to ship (6 + optional MT variants) and which R calibration for Mk7.5 (310 vs 300).
 
 ## Power / performance
 
