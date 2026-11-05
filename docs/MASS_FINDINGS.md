@@ -28,3 +28,11 @@ How to cut ~200 kg in a mod-owned way without copying base-game files:
 3. Reduce mass by dropping optional heavy parts per config (e.g. panoramic roof/glass, rear seats, undertray), which only gets part of the way.
 4. Accept lighter-than-stock mass by editing only mod-owned parts (engine mounts, etc.): negligible.
 Real car also ~83.5 kg driver vs 75 kg assumed (measured in game).
+
+## Update: runtime mass scaling is feasible (2026-11-05)
+- jbeam cannot edit another part's nodeWeight (no `"nodeWeight":"$..."` expressions exist in the whole base Vivace; counted 0), BUT the game's vehicle Lua has
+  `obj:setNodeMass(cid, m)`, `obj:getNodeMass(cid)`, `obj:getOriginalNodeMass(cid)` (used in lua/vehicle/beamstate.lua, energyStorage/fuelTank.lua, interactCargoContainers.lua).
+- Plan: mod-owned auxiliary controller (same pattern as ea888DsgSounds.lua) run at init that scales node masses toward a per-variant dry-mass target. No base files touched, shippable.
+- Targets (dry = DIN - ~34 kg fuel): GTI ~1261 (k~0.85 from 1481), PP ~1293 (k~0.87), R Mk7 ~1341 / Mk7.5 ~1396 (k~0.85 / 0.88). Refine by excluding wheels/engine nodes and fuel tank nodes (tank sets its own mass from a cached base value).
+- Caveats to test: ride height rises and suspension frequency changes with lighter sprung mass (springs are fixed N/m); beam strengths unchanged; fuel-node mass handling; order vs other init controllers.
+- Test 1 (console, UNTESTED): scale all nodes by 0.85 and print totals, then drive.
