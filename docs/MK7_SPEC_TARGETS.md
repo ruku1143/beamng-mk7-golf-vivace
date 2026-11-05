@@ -9,15 +9,15 @@ The mod will cover both Mk7 (2013-16) and Mk7.5 (2016-20). Working variant matri
 
 | Variant | Years | Power / torque | Box options | Notes |
 |---|---|---|---|---|
-| Mk7 GTI | 2013-16 | *220 PS / 350 Nm | 6MT, 6DSG (DQ250) | base brakes 314x30 / 300x12 |
-| Mk7 GTI Performance | 2013-16 | 230 PS / 350 Nm (sourced, auto-data) | 6MT, 6DSG | VAQ, 340x30 / 310x22 brakes |
+| Mk7 GTI | 2013-16 | 220 PS (user-confirmed 2026-11-05) / 350 Nm | 6MT, 6DSG (DQ250) | base brakes 314x30 / 300x12 |
+| Mk7 GTI Performance | 2013-16 | 230 PS (user-confirmed + auto-data) / 350 Nm | 6MT, 6DSG | VAQ, 340x30 / 310x22 brakes |
 | Mk7 R | 2014-16 | 300 PS / 380 Nm (sourced) | 6MT, 6DSG | Haldex Gen5 |
 | Mk7.5 GTI | 2016-20 | 230 PS / 350 Nm (sourced, Wikipedia) | 6MT, 7DSG (DQ381) | |
 | Mk7.5 GTI Performance | 2016-20 | 245 PS / 370 Nm (sourced, VW) | 6MT, 7DSG | VAQ, big brakes |
 | Mk7.5 R | 2016-20 | **310 PS / 380 Nm (user decision 2026-11-05; 2016-18 calibration per Wikipedia, power/torque still unverified)** | 6MT, 7DSG | |
 
 Rule of thumb for later phases: Mk7 = DQ250 (6DSG), Mk7.5 = DQ381 (7DSG). The mod's current DQ381 + 310 PS-calibrated R is Mk7.5.
-Decided: Mk7.5 R = 310 PS (the mod's existing calibration, so little retune needed). Open: how many configs to ship (6 + optional MT variants).
+Decided 2026-11-05: manual (MQ350) variants are shipped too, so up to 12 configs (6 DSG + 6 MT). Mk7.5 R = 310 PS (the mod's existing calibration, so little retune needed).
 
 ## Power / performance
 
