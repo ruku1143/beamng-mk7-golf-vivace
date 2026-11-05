@@ -36,3 +36,9 @@ Real car also ~83.5 kg driver vs 75 kg assumed (measured in game).
 - Targets (dry = DIN - ~34 kg fuel): GTI ~1261 (k~0.85 from 1481), PP ~1293 (k~0.87), R Mk7 ~1341 / Mk7.5 ~1396 (k~0.85 / 0.88). Refine by excluding wheels/engine nodes and fuel tank nodes (tank sets its own mass from a cached base value).
 - Caveats to test: ride height rises and suspension frequency changes with lighter sprung mass (springs are fixed N/m); beam strengths unchanged; fuel-node mass handling; order vs other init controllers.
 - Test 1 (console, UNTESTED): scale all nodes by 0.85 and print totals, then drive.
+
+## RESULT of console runtime scaling tests (2026-11-05, GTI) - FAILED, DO NOT REPEAT
+- Test 1: setNodeMass x0.85 on ALL nodes mid-session -> wheels fell off. (getNodeMass readback does not refresh immediately: showed before=after.)
+- Test 2: setNodeMass x0.90 on 370 body-type nodes (862.1 -> 775.9 kg, cut 86.2) via partOrigin filter -> body came apart (doors, tailgate, bonnet flung open, rear panels torn). Unknown whether the user respawned first.
+- Conclusion: changing node mass on a live, settled car breaks it. Cause unproven (latch/joint force spikes, or beam stiffness vs lighter nodes). Do NOT assume a spawn-time controller or a regenerated lighter body is safe: both change k/m of the structure. Test any further approach from a fresh spawn with a SMALL cut (<=5%) first, and keep every test on a throwaway spawn.
+- Context: the Vivace body (417 kg nodes) is a big hatch; real Golf is ~15% lighter. A ~220 kg cut (~25% of the body-type nodes) is a large physics change, so mass may have to be only partly corrected.
