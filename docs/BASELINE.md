@@ -20,5 +20,14 @@ Nothing here has been measured yet. This needs BeamNG running; Claude cannot dri
 Real targets for comparison are in `docs/MK7_SPEC_TARGETS.md` (EU kerb includes 75 kg driver; derived DIN = EU - 75).
 
 ## Notes (2026-11-05)
-- Masses measured in game by summing node masses (no driver, default fuel). Front % from the first script is WRONG (it printed wheelbase 1.758-1.799 m, expected ~2.6 m); diagnostic pending.
-- All three are ~275-330 kg over the real DIN weights (GTI DSG ~1295, PP DSG ~1327, R ~1375-1430).
+- Masses measured in game by summing node masses with the default DRIVER in the front-left seat (user-confirmed) and default fuel. Driver mass inside the sum is ASSUMED ~75 kg, not yet measured (check: spawn with the driver removed/seat empty and compare).
+- So compare to the EU kerb weight (ADAC, incl. 75 kg driver, 90% tank), NOT the derived DIN. Fuel: 50 L full ~37 kg vs ~45 L (90%) in the EU basis, a ~4 kg difference.
+- Front % from the first script is WRONG (printed wheelbase 1.758-1.799 m, expected ~2.6 m); diagnostic pending.
+
+| Config (DSG) | In game | EU kerb target | Over by |
+|---|---|---|---|
+| GTI (Mk7) | 1602.4 | 1370 | ~232 |
+| GTI Performance (Mk7) | 1605.4 | 1402 | ~203 |
+| Golf R | 1704.4 | 1505 (Mk7.5, 310 PS) / ~1450 (Mk7, low confidence) | ~199 / ~254 |
+
+(The earlier "~300 kg over" figure was against DIN and is superseded by this table.)
