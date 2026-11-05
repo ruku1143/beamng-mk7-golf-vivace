@@ -1,0 +1,40 @@
+{
+//VW Soundaktor (cabin sound actuator): plays EA888 engine loops from the dash, only while the camera is inside the car.
+//See lua/controller/ea888Soundaktor.lua. Empty the "Soundaktor" slot to disable it, like coding it off on the real car.
+"vivace_soundaktor_ea888": {
+    "information":{
+        "authors":"EA888 mod (samples: Hell_Raiser_999)",
+        "name":"Soundaktor (Cabin Engine Sound)",
+        "value":120,
+    },
+    "slotType" : "vivace_soundaktor_ea888",
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$ea888_soundaktorVolume", "range", "", "Engine Sound", 0.8, 0, 2, "Soundaktor Volume", "Volume of the synthetic engine sound played into the cabin", {"stepDis":0.05}],
+    ],
+    "controller": [
+        ["fileName"],
+        ["ea888Soundaktor", {
+            "volume":"$ea888_soundaktorVolume",
+            "idleVolumeCoef":0.3,
+            "dashNodes":["f6l", "f6r"],
+            "grainInterval":0.12,
+            //[file, recorded rpm, layer]: 0.18 s clips with 60 ms fades from tools/gen_soundaktor.ps1, played as overlapping one-shots
+            "grains":[
+                ["file:>art>sound>engine>ea888_soundaktor>grain_light_0900.wav", 900, "light"],
+                ["file:>art>sound>engine>ea888_soundaktor>grain_light_1600.wav", 1600, "light"],
+                ["file:>art>sound>engine>ea888_soundaktor>grain_light_2600.wav", 2600, "light"],
+                ["file:>art>sound>engine>ea888_soundaktor>grain_light_3800.wav", 3800, "light"],
+                ["file:>art>sound>engine>ea888_soundaktor>grain_light_5200.wav", 5200, "light"],
+                ["file:>art>sound>engine>ea888_soundaktor>grain_light_6600.wav", 6600, "light"],
+                ["file:>art>sound>engine>ea888_soundaktor>grain_load_0900.wav", 900, "load"],
+                ["file:>art>sound>engine>ea888_soundaktor>grain_load_1600.wav", 1600, "load"],
+                ["file:>art>sound>engine>ea888_soundaktor>grain_load_2600.wav", 2600, "load"],
+                ["file:>art>sound>engine>ea888_soundaktor>grain_load_3800.wav", 3800, "load"],
+                ["file:>art>sound>engine>ea888_soundaktor>grain_load_5200.wav", 5200, "load"],
+                ["file:>art>sound>engine>ea888_soundaktor>grain_load_6600.wav", 6600, "load"],
+            ],
+        }],
+    ],
+},
+}

@@ -1,0 +1,37 @@
+{
+//DSG sounds: one mixed sound (deep + exterior DSG "fart" samples from Hell_Raiser_999's TSI mod) played by
+//lua/controller/ea888DsgSounds.lua on fast upshifts and on launch release; the launch control hold (brake + full throttle
+//at a standstill) plays your recorded launch-control sound.
+"vivace_dsg_sound_ea888": {
+    "information":{
+        "authors":"EA888 mod (sounds: Hell_Raiser_999)",
+        "name":"DSG Sounds (Shift and Launch)",
+        "value":0,
+    },
+    "slotType" : "vivace_dsg_sound_ea888",
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$ea888_dsgVolume", "range", "", "DSG Sounds", 1.2, 0, 6, "DSG Shift Sound Volume", "Volume of the upshift sound", {"stepDis":0.1}],
+        ["$ea888_launchVolume", "range", "", "DSG Sounds", 1.0, 0, 5, "Launch Rumble Volume", "Volume of the launch control rumble", {"stepDis":0.1}],
+        ["$ea888_launchRPM", "range", "rpm", "DSG Sounds", 3300, 0, 5000, "Launch Control RPM", "RPM held by launch control (0 = use the drive mode's setting)", {"stepDis":100}],
+    ],
+    "controller": [
+        ["fileName"],
+        ["ea888DsgSounds", {
+            "shiftVolume":"$ea888_dsgVolume",
+            "launchVolume":"$ea888_launchVolume",
+            "launchRPM":"$ea888_launchRPM",
+            //recorded launch control hold (sounds_in/launch_original.wav): mono, 120 ms faded edges, -3 dBFS peak.
+            //played as overlapping one-shots, retriggered every 1.057 s (length minus the fade) so it sounds continuous
+            "launchGrainFile":"file:>vehicles>common>ea888_sounds>launch_grain.wav",
+            "launchGrainInterval":1.057,
+            "launchGrainGain":1.0,
+            //[file, mix]: deep sample as the base, exterior sample layered on top for bite
+            "layers":[
+                ["file:>vehicles>common>ea888_sounds>DSG_Farts_INT.ogg", 1.0],
+                ["file:>vehicles>common>ea888_sounds>DSG_Farts.ogg", 0.125],
+            ],
+        }],
+    ],
+},
+}

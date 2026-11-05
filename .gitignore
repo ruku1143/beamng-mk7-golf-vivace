@@ -1,0 +1,6 @@
+*.zip
+*.bak
+*.orig
+_base_extract/
+base_game/
+Thumbs.db

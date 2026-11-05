@@ -1,0 +1,28 @@
+{
+  "Configuration": "EA888 GTI (230 PS) DSG",
+  "Description": "EA888 Gen 3 2.0 TSI with IHI IS20, Mk7.5 Golf GTI calibration: 230 PS (4700-6200 rpm), 350 Nm (1500-4600 rpm). 7-speed DQ381 DSG, FWD, open differential.",
+  "Config Type": "Factory",
+  "Drivetrain": "FWD",
+  "Fuel Type": "Gasoline",
+  "Induction Type": "Turbo",
+  "Transmission": "Automatic",
+  "defaultMultiPaintSetup": {
+    "name": "vivace_ea888_gti Multi Paint Setup",
+    "paint1": "Rouge Carmin",
+    "paint2": "Rouge Feu",
+    "paint3": {
+      "baseColor": [
+        0.27000001072884,
+        0.27000001072884,
+        0.33000001311302,
+        1.2000000476837
+      ],
+      "class": "hidden",
+      "clearcoat": 1,
+      "clearcoatRoughness": 0.0299999993,
+      "metallic": 0.5,
+      "name": "vivace_ea888_gti Paint 3",
+      "roughness": 0.600000024
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+    "header" : {
+        "version" : 1
+    },
+    "eventName" : "event:>Engine>default",
+    "samples" : 
+    [
+        [
+           ["art/sound/engine/ea888_exh/1076.wav", 1076],
+["art/sound/engine/ea888_exh/1392.wav", 1392],
+["art/sound/engine/ea888_exh/2416.wav", 2416],
+["art/sound/engine/ea888_exh/3062.wav", 3062],
+["art/sound/engine/ea888_exh/3515.wav", 3515],
+["art/sound/engine/ea888_exh/3823.wav", 3823],
+["art/sound/engine/ea888_exh/4218.wav", 4218],
+["art/sound/engine/ea888_exh/4452.wav", 4452],
+["art/sound/engine/ea888_exh/4877.wav", 4877],
+["art/sound/engine/ea888_exh/5097.wav", 5097],
+["art/sound/engine/ea888_exh/6000.wav", 6000]
+        ],
+        [
+           ["art/sound/engine/ea888_exh/1318o.wav", 1318],
+["art/sound/engine/ea888_exh/1791o.wav", 1791],
+["art/sound/engine/ea888_exh/2373o.wav", 2373],
+["art/sound/engine/ea888_exh/2900o.wav", 2900],
+["art/sound/engine/ea888_exh/3575o.wav", 3575],
+["art/sound/engine/ea888_exh/4218o.wav", 4218],
+["art/sound/engine/ea888_exh/4862o.wav", 4862],
+["art/sound/engine/ea888_exh/5361o.wav", 5361],
+["art/sound/engine/ea888_exh/5910o.wav", 5910],
+["art/sound/engine/ea888_exh/6608o.wav", 6608]
+        ]
+    ]
+}

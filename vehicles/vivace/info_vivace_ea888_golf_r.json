@@ -1,0 +1,54 @@
+{
+  "Configuration": "EA888 Golf R (310 PS) DSG",
+  "Description": "EA888 Gen 3 2.0 TSI with IHI IS38, Mk7.5 Golf R calibration: 310 PS (5500-6500 rpm), 400 Nm (2000-5200 rpm). 7-speed DQ381 DSG, AWD with electronically clutched torque splitter.",
+  "Config Type": "Factory",
+  "Drivetrain": "AWD",
+  "Fuel Type": "Gasoline",
+  "Induction Type": "Turbo",
+  "Transmission": "Automatic",
+  "defaultMultiPaintSetup": {
+    "name": "vivace_ea888_golf_r Multi Paint Setup",
+    "paint1": {
+      "baseColor": [
+        0.050000000745058,
+        0.20000000298023,
+        0.56000000238419,
+        1.2000000476837
+      ],
+      "class": "hidden",
+      "clearcoat": 1,
+      "clearcoatRoughness": 0.0500000007,
+      "metallic": 0.800000012,
+      "name": "vivace_ea888_golf_r Paint 1",
+      "roughness": 0.649999976
+    },
+    "paint2": {
+      "baseColor": [
+        0.090000003576279,
+        0.43000000715256,
+        0.77999997138977,
+        1.2000000476837
+      ],
+      "class": "hidden",
+      "clearcoat": 1,
+      "clearcoatRoughness": 0.0500000007,
+      "metallic": 0.800000012,
+      "name": "vivace_ea888_golf_r Paint 2",
+      "roughness": 0.649999976
+    },
+    "paint3": {
+      "baseColor": [
+        0.090000003576279,
+        0.43000000715256,
+        0.77999997138977,
+        1.2000000476837
+      ],
+      "class": "hidden",
+      "clearcoat": 1,
+      "clearcoatRoughness": 0.0500000007,
+      "metallic": 0.800000012,
+      "name": "vivace_ea888_golf_r Paint 3",
+      "roughness": 0.649999976
+    }
+  }
+}

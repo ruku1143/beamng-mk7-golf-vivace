@@ -1,0 +1,31 @@
+{
+    "header" : {
+        "version" : 1
+    },
+    "eventName" : "event:>Engine>default",
+    "samples" : 
+    [
+        [
+           ["art/sound/engine/ea888_eng/703.wav", 703],
+["art/sound/engine/ea888_eng/1054.wav", 1054],
+["art/sound/engine/ea888_eng/1485.wav", 1485],
+["art/sound/engine/ea888_eng/2016.wav", 2016],
+["art/sound/engine/ea888_eng/2636.wav", 2636],
+["art/sound/engine/ea888_eng/3339.wav", 3339],
+["art/sound/engine/ea888_eng/4192.wav", 4192],
+["art/sound/engine/ea888_eng/5363.wav", 5363],
+["art/sound/engine/ea888_eng/6528.wav", 6528]
+        ],
+        [
+           ["art/sound/engine/ea888_eng/1933o.wav", 1933],
+["art/sound/engine/ea888_eng/2460o.wav", 2460],
+["art/sound/engine/ea888_eng/3120o.wav", 3120],
+["art/sound/engine/ea888_eng/3735o.wav", 3735],
+["art/sound/engine/ea888_eng/4514o.wav", 4514],
+["art/sound/engine/ea888_eng/5273o.wav", 5273],
+["art/sound/engine/ea888_eng/5976o.wav", 5976],
+["art/sound/engine/ea888_eng/6580o.wav", 6580],
+["art/sound/engine/ea888_eng/7082o.wav", 7082]
+        ]
+    ]
+}
