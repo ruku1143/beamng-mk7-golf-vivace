@@ -40,3 +40,4 @@ The .pc configs reference parts that exist only in the generated file. After a f
     python -I tools/gen_mk7_parts.py
 (needs the local BeamNG install; default zip path is D:\SteamLibrary\...\vivace.zip, or pass the path as argument). Without it the configs fail to load those parts.
 Never commit or ship vehicles/vivace/generated/.
+- 2026-11-05 (local): user tested the three configs in game: spawn OK, Mk7 brakes + R 55 L tank show correctly, brakes feel fine (no log errors reported). Torque values still unverified by measurement.
