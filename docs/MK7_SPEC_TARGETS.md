@@ -39,7 +39,7 @@ Wikipedia also lists a 310 PS / 380 Nm R (2016-18, Mk7.5): not a target. Wikiped
 
 | Item | GTI | GTI Performance | R (3-door DSG) | Source / confidence |
 |---|---|---|---|---|
-| Kerb weight | 1282-1283 kg (Evo, cars-data); fastestlaps 1351-1434 | 1307 kg | 1395-1420 kg (5-door ~1431) | [auto-data PP](https://www.auto-data.net/en/volkswagen-golf-vii-3-door-gti-2.0-tsi-230hp-dsg-45038), [auto-data R](https://www.auto-data.net/en/volkswagen-golf-vii-3-door-r-2.0-tsi-300hp-4motion-dsg-45048) - **Low** (DIN/EU basis and driver not stated; ignore the 1483 kg R figure, Mk7.5) |
+| Kerb weight | see "Kerb weights" section below (5-door, EU/UK) | | | |
 | Max permissible | no source found | no source found | 1980 kg | auto-data - Med |
 | F/R split | no source found | no source found | no source found | - (plan's 60/40 and 58/42 are unverified memory) |
 | Fuel tank | 50 L | 50 L | 55 L | [mobile.de](https://www.mobile.de/auto/vw/golf-gti/2013/schraegheck/modell/daten-fakten/), auto-data - Med |
@@ -48,6 +48,36 @@ Wikipedia also lists a 310 PS / 380 Nm R (2016-18, Mk7.5): not a target. Wikiped
 | Width (no mirrors) | no source found | 1799 | 1799 | auto-data - Med |
 | Track F/R | no source found | 1538 / 1516 | 1541 / 1515 | auto-data - Med |
 | Drag Cd / frontal area | no source found | no source found | no source found | - |
+
+## Kerb weights (5-door, EU/UK) - researched 2026-11-05
+Basis: ADAC "Leergewicht (EU)" = EU kerb weight, believed to include a 75 kg driver (90% tank) - not confirmed from ADAC's definition page.
+DIN (no driver) = EU - 75 kg is a DERIVED estimate, not sourced. No VW press-kit/COC figure was reachable. 3-door, estate and NA/AU figures excluded.
+**No measured or published front/rear weight split or axle load exists in any source found** (only permitted axle limits). Best lead: Grassroots Motorsports "what's it weigh" Mk7 GTI (403 from cloud).
+
+### Mk7 (2013-16), ADAC EU basis, High confidence unless noted
+| Variant | 6MT | 6DSG | Derived DIN (MT / DSG) |
+|---|---|---|---|
+| GTI 220 PS | 1351 | 1370 | ~1276 / ~1295 |
+| GTI Performance 230 PS | 1382 | 1402 | ~1307 / ~1327 |
+| R 300 PS | no 5-door MT source (3-door MT = 1476, Med-high; 5-door ~ same or slightly more) | 5-door DSG 1450 (auto-data, basis unclear, Low-Med); 3-door DSG ~1495 EU (inferred from 1420 + 75) | - |
+
+ADAC pages: GTI 235658 (MT) / 235660 (DSG), PP 235659 / 235661. Within ADAC, 3-door and 5-door weights are identical.
+DSG adds ~19-20 kg on the GTI variants.
+
+### Mk7.5 (2017-20)
+| Variant | 6MT | 7DSG | Source / confidence |
+|---|---|---|---|
+| GTI 230 PS | 1352 (paultan snippet, Low-Med; WhichCar AU 1324 Low, ignore) | 1341 (auto-data, basis unstated, Low-Med) | no ADAC page located |
+| GTI Performance 245 PS | 1387 EU (ADAC 269412, High) | 1370 (autodata1, basis unstated, Low-Med) | the 1415 ADAC figure is 3-door DSG: excluded |
+| R 310 PS (2017-18) | no 5-door MT EU source (1483 angurten, Low; AU 1429 not applicable) | 1505 EU (ADAC 266260, High) | |
+| R 300 PS (2018-20) | no source found | 1515 EU (ADAC 303254, High) | |
+
+Inconsistencies to resolve: the Mk7.5 aggregator DSG figures (1341, 1370) do not fit the ADAC MT numbers if they were DIN (they imply DSG lighter than MT); treat as unreliable.
+The Mk7.5 R is ~10-30 kg heavier than the Mk7 R (GPF on the 300 PS).
+
+### Working mass targets (use until better data; EU = incl. driver)
+Mk7 GTI MT 1351, Mk7 PP MT 1382, Mk7.5 PP MT 1387, Mk7.5 R DSG 1505 (310 PS) - these are the only High-confidence anchors.
+Others: estimate from deltas (DSG +19-20 kg; R vs PP ~+95-100 kg) and mark UNVERIFIED in configs. Decide in the local session whether the game's mass figure should include a driver (BeamNG default: no driver, so use the derived DIN values).
 
 ## Brakes (disc diameter x thickness, mm)
 

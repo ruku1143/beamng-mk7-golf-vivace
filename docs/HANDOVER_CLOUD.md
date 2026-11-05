@@ -47,3 +47,4 @@ Written 2026-11-05. Read `CLAUDE.md`, then `docs/PLAN.md` (approved plan), then 
 
 - 2026-11-05: Phase 1 research done via 3 web agents. Filled MK7_SPEC_TARGETS.md (sources + confidence, gaps marked) and wrote GEARING_CALC.md. No mod files touched. Biggest gaps: gear ratios, kerb weight basis, axle split, spring rates.
 - 2026-11-05: Scope widened by user to pre- and post-facelift (6 variants); docs updated, no mod changes.
+- 2026-11-05: Kerb weights researched (5-door EU/UK, ADAC EU basis); see MK7_SPEC_TARGETS.md. Still missing: F/R split (any variant), DIN figures, Mk7 R 5-door MT, Mk7.5 R MT, Mk7.5 GTI ADAC.
