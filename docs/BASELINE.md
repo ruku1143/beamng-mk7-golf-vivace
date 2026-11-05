@@ -31,3 +31,8 @@ Real targets for comparison are in `docs/MK7_SPEC_TARGETS.md` (EU kerb includes 
 | Golf R | 1704.4 | 1505 (Mk7.5, 310 PS) / ~1450 (Mk7, low confidence) | ~199 / ~254 |
 
 (The earlier "~300 kg over" figure was against DIN and is superseded by this table.)
+
+## Driver mass measured (2026-11-05)
+Golf R DSG with driver removed: 1620.9 kg (with driver 1704.4) => the in-game driver = **83.5 kg** (not 75). Empty-car masses (derived for GTI/PP by subtracting 83.5):
+GTI ~1519, PP ~1522, R 1620.9 kg. Compare these to derived DIN (GTI DSG ~1295, PP DSG ~1327, R ~1430 Mk7.5 / ~1375 Mk7): over by ~224 / ~195 / ~190-245 kg.
+Preferred basis going forward: empty car vs DIN. (EU kerb includes 75 kg driver; the game driver is 83.5 kg, so EU comparisons are ~8.5 kg pessimistic.)

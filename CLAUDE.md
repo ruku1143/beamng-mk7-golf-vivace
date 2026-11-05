@@ -24,4 +24,4 @@ diffs, power. Scope = DATA ONLY; keep Vivace body geometry. Mk7.5 (facelift) is 
 - Retune ECU `torqueModMult` and turbo `engineDef` together; they are coupled (see KNOWN_ISSUES).
 - BeamNG only runs locally on Windows; all in-game testing happens on the user's PC.
 - Paths: mod root = this folder. Game install = `D:\SteamLibrary\steamapps\common\BeamNG.drive`.
-- Game masses include the default driver (front-left seat): compare to EU kerb weight (incl. 75 kg driver), not DIN.
+- Game masses include the default driver (front-left seat, measured 83.5 kg). Subtract it and compare the empty car to DIN (EU kerb - 75).
