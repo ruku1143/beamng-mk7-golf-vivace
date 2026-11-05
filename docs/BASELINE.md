@@ -40,3 +40,10 @@ Preferred basis going forward: empty car vs DIN. (EU kerb includes 75 kg driver;
 ## Deferred (user decision 2026-11-05)
 Performance readings (0-100, 100-0, top speed, dyno) postponed to a later date. Mass baseline done; split diagnostic still pending.
 - Diagnostic result: v.data.nodes[].pos is the vehicle frame (front y=-1.342, rear y=+1.338, wheelbase 2.680); obj:getNodePosition is world-oriented and WRONG for the split. Use v.data.nodes.
+
+## Corrected split + mass methods (2026-11-05)
+- Golf R (DSG), v.data.nodes method (vehicle frame): MASS 1583.4 kg, FRONT 55.6%, wheelbase 2.680 m. Assumed no driver.
+- Old `obj:getNodeMass` method (1620.9 kg R empty) INCLUDES fuel: 1620.9 - 1583.4 = 37.5 kg = 50 L x 0.75. New method (`v.data.nodes[].nodeWeight`) = dry, no fuel, and matches tools/mass_scan.py (R scan 1586.1).
+- So: R dry 1583.4 | + full fuel 1620.9 | + driver (83.5) 1704.4. GTI/PP dry derived: GTI 1602.4-83.5-37.5 = ~1481, PP ~1484 (derived, not measured with the new method).
+- DIN/EU targets assume ~90% fuel (45 L ~ 34 kg), so compare "full tank minus ~4 kg". Gaps unchanged (~190-245 kg R).
+- R static front share 55.6% (dry, empty). Real Mk7 R split unsourced (plan's 58/42 is memory). GTI/PP split still to measure with the corrected command.
