@@ -37,6 +37,15 @@ The mod's DQ381 7th (overall 2.001) matches 0.64 x 3.13 = 2.00. So the previous 
 Still to source: Mk7 DQ250 GTI/PP ratios, PP MQ350 (same as GTI?), R DQ381 overall, reverse ratios, rev limiter.
 Tyre circumference (nominal): 225/45R17 1.993 m, 225/40R18 2.002 m, 235/35R19 2.033 m.
 
+## VW-official sets (Mk8 R US spec PDF, supplied by the user 2026-11-05)
+| Box | Ratios | Reverse | Final I / II |
+|---|---|---|---|
+| 6MT (R) | 3.36 / 2.09 / 1.48 / 1.09 / 1.10 / 0.91 | 3.99 | 4.24 / 3.27 |
+| DQ381 | 3.19 / 2.75 / 1.90 / 1.04 / 0.79 / 0.86 / 0.66 | 2.90 | 4.47 / 3.30 |
+The 6MT set equals the Mk7 R set from other sources (so it is correct for the Mk7 R), and the DQ381 table equals the gearboxlist table (6th 0.86 > 5th 0.79 is genuine, it is the dual-clutch two-shaft layout, not a typo).
+DQ381 overall, hypothesis gears 1,4,5 on Final I 4.47 and 2,3,6,7 on Final II 3.30 (the only assignment that is monotonic, still INFERRED): 14.26 / 9.08 / 6.27 / 4.65 / 3.53 / 2.84 / 2.18.
+This R set is not the mod's current DQ381 set (the mod's 14.18/8.61/5.54/3.88/2.92/2.38/2.00 is a GTI-like set), so the mod needs separate DQ381 ratio sets for GTI and R.
+
 ## Open items
 - Real per-variant ratios and final drives: blocked, needs a VW SSP/spec sheet (see MK7_SPEC_TARGETS.md "Still unsourced").
 - Brake torque scaling from disc size, mass-delta budget, fuel-tank litres: wait for baseline numbers from the local session (stock Vivace values unknown here).
