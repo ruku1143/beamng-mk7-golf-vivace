@@ -26,3 +26,4 @@ Zip the mod root so `vehicles/` and `art/` are at the zip root (plus info.json).
 - 2026-11-05 (local): added docs/BASE_VALUES.md (stock Vivace fuel/brake/spring values). No mod behaviour changed.
 - 2026-11-05: Wide Phase 1 research merged (variants, weights, brakes, gearing, engine). Docs only.
 - 2026-11-05 (local): added docs/BASELINE.md procedure + docs/baseline_dump.lua (UNTESTED). Baseline NOT measured: needs the user to run the game and paste results.
+- 2026-11-05 (local): baseline masses measured: GTI 1602.4, PP 1605.4, R 1704.4 kg (DSG). Split script bugged; ~300 kg over real.

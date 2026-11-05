@@ -13,8 +13,12 @@ Nothing here has been measured yet. This needs BeamNG running; Claude cannot dri
 ## Results (fill in)
 | Config | Mass kg | Front % | CoG y/z | 0-100 s | 100-0 m | Top km/h | Peak PS @ rpm | Peak Nm @ rpm | Fuel L |
 |---|---|---|---|---|---|---|---|---|---|
-| vivace_ea888_gti | | | | | | | | | 50 (stock tank) |
-| vivace_ea888_gti_performance | | | | | | | | | 50 |
-| vivace_ea888_golf_r | | | | | | | | | 50 |
+| vivace_ea888_gti (DSG) | 1602.4 | unreliable | | | | | | | | 50 (stock tank) |
+| vivace_ea888_gti_performance (DSG) | 1605.4 | unreliable | | | | | | | | 50 |
+| vivace_ea888_golf_r (DSG) | 1704.4 | unreliable | | | | | | | | 50 |
 
 Real targets for comparison are in `docs/MK7_SPEC_TARGETS.md` (EU kerb includes 75 kg driver; derived DIN = EU - 75).
+
+## Notes (2026-11-05)
+- Masses measured in game by summing node masses (no driver, default fuel). Front % from the first script is WRONG (it printed wheelbase 1.758-1.799 m, expected ~2.6 m); diagnostic pending.
+- All three are ~275-330 kg over the real DIN weights (GTI DSG ~1295, PP DSG ~1327, R ~1375-1430).
