@@ -38,5 +38,10 @@ Written 2026-11-05. Read `CLAUDE.md`, then `docs/PLAN.md` (approved plan), then 
 - [ ] Read stock Vivace mass, fuel tank, brake and suspension constants from vivace.zip (see docs/BASE_GAME_REFERENCE.md)
 - [ ] Check slot-override behaviour for mass/fuel/brake parts
 - [ ] Test any UNTESTED jbeam drafts in game and check beamng.log
+- [ ] Decide: 245 PS GTI PP and DQ381 on the R are Mk7.5-era (see MK7_SPEC_TARGETS.md "Decisions needed")
+- [ ] Find real gear ratios/final drives (VW SSP or spec sheet; golfmk7.com / vwvortex threads were 403 from the cloud) - needs a normal browser
+- [ ] Read stock Vivace spring/ARB/brake values; suspension rates have no OEM source, so tune relative to Vivace stock
 
 ## Cloud session log (append dated entries)
+
+- 2026-11-05: Phase 1 research done via 3 web agents. Filled MK7_SPEC_TARGETS.md (sources + confidence, gaps marked) and wrote GEARING_CALC.md. No mod files touched. Biggest gaps: gear ratios, kerb weight basis, axle split, spring rates.

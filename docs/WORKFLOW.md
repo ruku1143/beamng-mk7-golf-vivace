@@ -22,3 +22,4 @@ Zip the mod root so `vehicles/` and `art/` are at the zip root (plus info.json).
 
 ## Change log
 - 2026-11-05: docs created from discovery; no mod behaviour changed yet.
+- 2026-11-05: Phase 1 spec research filled in docs/MK7_SPEC_TARGETS.md; added docs/GEARING_CALC.md. Docs only, no mod behaviour changed.
