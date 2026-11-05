@@ -29,3 +29,4 @@ Zip the mod root so `vehicles/` and `art/` are at the zip root (plus info.json).
 - 2026-11-05 (local): baseline masses measured: GTI 1602.4, PP 1605.4, R 1704.4 kg (DSG). Split script bugged; ~300 kg over real.
 - 2026-11-05 (local): correction: in-game masses include the default driver, so target is EU kerb weight. Gaps now ~200-250 kg, not ~300.
 - 2026-11-05 (local): measured driver = 83.5 kg (R empty 1620.9 kg). Empty-car gaps vs DIN: GTI ~224, PP ~195, R ~190-245 kg.
+- 2026-11-05 (local): added tools/mass_scan.py + docs/MASS_FINDINGS.md: mass is the Vivace body/chassis, not the engine swap (engine/turbo/DQ381 equal base parts). Method for cutting ~200 kg still open.
