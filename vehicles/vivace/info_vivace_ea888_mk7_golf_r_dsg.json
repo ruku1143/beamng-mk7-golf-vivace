@@ -1,0 +1,54 @@
+{
+  "Configuration": "EA888 Mk7 Golf R (300 PS) DSG",
+  "Description": "Mk7 (2014-16) Golf R 300 PS / 380 Nm, AWD, DQ250 6-speed DSG. Mk7 spec data: see docs/MK7_SPEC_TARGETS.md.",
+  "Config Type": "Factory",
+  "Drivetrain": "AWD",
+  "Fuel Type": "Gasoline",
+  "Induction Type": "Turbo",
+  "Transmission": "Automatic",
+  "defaultMultiPaintSetup": {
+    "name": "vivace_ea888_mk7_golf_r_dsg Multi Paint Setup",
+    "paint1": {
+      "baseColor": [
+        0.050000000745058,
+        0.20000000298023,
+        0.56000000238419,
+        1.2000000476837
+      ],
+      "class": "hidden",
+      "clearcoat": 1,
+      "clearcoatRoughness": 0.0500000007,
+      "metallic": 0.800000012,
+      "name": "vivace_ea888_golf_r Paint 1",
+      "roughness": 0.649999976
+    },
+    "paint2": {
+      "baseColor": [
+        0.090000003576279,
+        0.43000000715256,
+        0.77999997138977,
+        1.2000000476837
+      ],
+      "class": "hidden",
+      "clearcoat": 1,
+      "clearcoatRoughness": 0.0500000007,
+      "metallic": 0.800000012,
+      "name": "vivace_ea888_golf_r Paint 2",
+      "roughness": 0.649999976
+    },
+    "paint3": {
+      "baseColor": [
+        0.090000003576279,
+        0.43000000715256,
+        0.77999997138977,
+        1.2000000476837
+      ],
+      "class": "hidden",
+      "clearcoat": 1,
+      "clearcoatRoughness": 0.0500000007,
+      "metallic": 0.800000012,
+      "name": "vivace_ea888_golf_r Paint 3",
+      "roughness": 0.649999976
+    }
+  }
+}

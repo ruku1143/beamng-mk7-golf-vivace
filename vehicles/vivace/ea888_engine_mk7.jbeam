@@ -1,0 +1,87 @@
+{
+//Pre-facelift (Mk7, 2013-16) ECU calibrations. FIRST ESTIMATES, UNTESTED: derived by scaling the existing Mk7.5 maps, not dyno-solved.
+//Mk7 GTI Performance (230 PS / 350 Nm) = the existing vivace_engine_ecu_ea888_gti map, so it has no part here.
+//Basis (docs/MK7_SPEC_TARGETS.md): GTI 220 PS @4500-6200, 350 Nm @1500-4400. R 300 PS @5500-6200, 380 Nm @1800-5500.
+"vivace_engine_ecu_ea888_gti_mk7": {
+    "information":{
+        "authors":"EA888 mod",
+        "name":"Mk7 Golf GTI ECU (220 PS / 350 Nm)",
+        "value":1100,
+    },
+    "slotType" : "vivace_engine_ecu_ea888",
+    "mainEngine":{
+        "revLimiterRPM":6500,
+        "revLimiterType":"timeBased",
+        "revLimiterCutTime":0.1,
+        //230 -> 220 PS = x0.957 on the high-rpm power band; torque plateau (350 Nm) kept, tapering in from 4400 rpm
+        "torqueModMult":[
+            ["rpm", "torque"],
+            [500,  0.862],
+            [750,  1.0],
+            [1000, 1.0],
+            [1250, 1.0],
+            [1500, 1.0],
+            [1750, 1.0],
+            [2000, 1.0],
+            [2500, 1.0],
+            [3000, 1.0],
+            [3500, 1.0],
+            [4000, 1.0],
+            [4500, 0.985],
+            [5000, 0.965],
+            [5500, 0.957],
+            [6000, 0.957],
+            [6500, 0.957],
+            [7000, 0.957],
+        ],
+    },
+    "turbocharger": {
+        "wastegateStart":14.0,
+        "wastegateLimit":15.0,
+    },
+    "vehicleController": {
+        "highShiftUpRPM":6300,
+    },
+},
+"vivace_engine_ecu_ea888_r_mk7": {
+    "information":{
+        "authors":"EA888 mod",
+        "name":"Mk7 Golf R ECU (300 PS / 380 Nm)",
+        "value":1700,
+    },
+    "slotType" : "vivace_engine_ecu_ea888",
+    "mainEngine":{
+        "revLimiterRPM":6700,
+        "revLimiterType":"timeBased",
+        "revLimiterCutTime":0.1,
+        //Mk7.5 map is 310 PS / 400 Nm: torque x0.95 (380/400), power band x0.968 (300/310) from 5500 rpm
+        "torqueModMult":[
+            ["rpm", "torque"],
+            [500,  0.738],
+            [750,  0.936],
+            [1000, 0.95],
+            [1250, 0.95],
+            [1500, 0.95],
+            [1750, 0.95],
+            [2000, 0.95],
+            [2500, 0.95],
+            [3000, 0.95],
+            [3500, 0.95],
+            [4000, 0.95],
+            [4500, 0.95],
+            [5000, 0.958],
+            [5500, 0.968],
+            [6000, 0.968],
+            [6500, 0.968],
+            [7000, 0.968],
+        ],
+    },
+    "turbocharger": {
+        "wastegateStart":17.0,
+        "wastegateLimit":18.0,
+    },
+    "vehicleController": {
+        "highShiftUpRPM":6500,
+    },
+},
+}

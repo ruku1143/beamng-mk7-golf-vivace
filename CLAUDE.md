@@ -13,6 +13,7 @@ diffs, power. Scope = DATA ONLY; keep Vivace body geometry. Mk7.5 (facelift) is 
 - docs/MK7_SPEC_TARGETS.md - target numbers (UNVERIFIED until the Source column is filled)
 - docs/KNOWN_ISSUES.md - gotchas and landmines
 - docs/BASE_VALUES.md - stock Vivace numbers (brakes, springs, fuel)
+- docs/CONFIGS.md - the 10-config matrix and what is pending
 - docs/PLAN.md - approved phase plan; docs/HANDOVER_CLOUD.md - current handover state
 - docs/WORKFLOW.md - testing, packaging, conventions, change log
 - Plan: the approved phase plan is summarised in docs/WORKFLOW.md (Phases 0-4)
