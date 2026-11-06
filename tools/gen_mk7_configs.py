@@ -23,7 +23,7 @@ def load(name):
 
 def manual(parts, r):
     parts['vivace_shifter'] = 'vivace_shifter_M'
-    parts['vivace_steer'] = 'vivace_steer_sport'
+    parts['vivace_steer'] = 'vivace_steer_Sport_round'
     parts.pop('vivace_dsg_sound_ea888', None)
     parts['vivace_transmission'] = 'vivace_transmission_ea888_MQ350_R' if r else 'vivace_transmission_ea888_MQ350'
     if not r:
@@ -56,6 +56,7 @@ def main():
             parts['vivace_transmission'] = 'vivace_transmission_ea888_DQ250_GTI'
         elif kind == 'dq250':
             parts['vivace_transmission'] = 'vivace_transmission_ea888_DQ250_R'
+        parts['skin_interior'] = 'vivace_skin_interior_arsca'  # external mod: subieberry_vivace_arsenic_int_alt
         if ecu:
             parts['vivace_engine_ecu_ea888'] = ecu
         pc['Configuration'] = key
