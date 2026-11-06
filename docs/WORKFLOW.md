@@ -50,3 +50,4 @@ Never commit or ship vehicles/vivace/generated/.
 - 2026-11-05 (local): R DSG 310 PS measured 0-100 4.59 s, 100-0 34.4 m (match real). Note mass/power interplay in BASELINE.md.
 - 2026-11-05 (local): GTI 230 PS DSG measured 6.34 s / 35.1 m. Performance baseline for the 3 originals complete; all match real 0-100 within ~0.1 s.
 - 2026-11-06 (local): all 12 configs now use the round Sport steering wheel (paddles on DSG, none on manual) and the arsenic no-green interior (external mods, see KNOWN_ISSUES). The user's own 'my gti' config (in the game's user vehicles folder, not the repo) was reviewed, not edited.
+- 2026-11-06 (local): Soundaktor uninstalled from all 12 configs (user: bugged). The part/Lua/sound files are still in the mod, just unselected; to re-enable set vivace_soundaktor_ea888 back to 'vivace_soundaktor_ea888' in the 3 template .pc files and rerun tools/gen_mk7_configs.py.

@@ -126,7 +126,7 @@
     "vivace_sideskirt_L": "vivace_sideskirt_L_sport",
     "vivace_sideskirt_R": "vivace_sideskirt_R_sport",
     "vivace_skidplate_rally_M": "",
-    "vivace_soundaktor_ea888": "vivace_soundaktor_ea888",
+    "vivace_soundaktor_ea888": "",
     "vivace_speedlimit": "vivace_speedlimit_250",
     "vivace_spoiler": "",
     "vivace_spring_R": "vivace_spring_R_sport",

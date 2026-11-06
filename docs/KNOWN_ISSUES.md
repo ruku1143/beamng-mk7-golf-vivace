@@ -13,3 +13,4 @@
 11. Total vehicle mass, fuel (50 L) and all suspension/brake values are base Vivace, not Golf.
 - Mk7 GTI/PP DSG gear ratios are INFERRED from a Passat 02E example (see GEARING_CALC.md); replace when a real GTI DQ250 table is found.
 - EXTERNAL MOD DEPENDENCIES (added 2026-11-06): all 12 configs now require two other BeamNG repo mods, both installed/enabled on the user's PC: `vivace_steeringwheels_sk` (parts vivace_steer_Sport_round = manual, vivace_steer_Sport_round_paddles = DSG) and `subieberry_vivace_arsenic_int_alt` (skin_interior_arsca, "Arsenic without green accents"). Without them the configs lose those parts (wheel/interior fall back or error). Wheel rule: paddles on DSG, no paddles on manual.
+- Soundaktor (vivace_soundaktor_ea888) is BUGGED per user and is deselected in every config; files kept for later repair.
